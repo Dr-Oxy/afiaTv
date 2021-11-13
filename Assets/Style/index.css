@@ -24,6 +24,7 @@ body {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper header.afia-header .afia-logo img {
@@ -121,8 +122,6 @@ nav.navbar ul.nav-menu .nav-items a:active {
 @media screen and (max-width: 768px) {
   .wrapper header.afia-header {
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .wrapper header.afia-header .mobile-menu {
