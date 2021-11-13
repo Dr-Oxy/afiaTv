@@ -1,0 +1,164 @@
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #111;
+}
+
+.wrapper header.afia-header {
+  background-color: #fb781a;
+  color: #fff;
+
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper header.afia-header .afia-logo img {
+  height: 30px;
+}
+
+.wrapper header.afia-header .mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper header.afia-header .mobile-menu .bar {
+  display: block;
+  background-color: #fff;
+
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper header.afia-header .mobile-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.wrapper header.afia-header .mobile-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.wrapper header.afia-header .mobile-menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.wrapper header.afia-header nav.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper header.afia-header nav.navbar ul.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.wrapper header.afia-header nav.navbar ul.nav-menu .nav-items {
+  margin-right: 40px;
+}
+.activeState {
+  padding-bottom: 3px;
+  border-bottom: 3px white solid;
+  width: fit-content;
+  transition: all ease 0.3;
+}
+
+.wrapper header.afia-header nav.navbar ul.nav-menu .nav-items a {
+  text-decoration: none;
+  color: #fff;
+
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wrapper header.afia-header nav.navbar ul.nav-menu .nav-items a:hover {
+  text-decoration: underline;
+}
+
+nav.navbar ul.nav-menu .nav-items a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+.wrapper header.afia-header nav.navbar .nav-btn button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+
+  background-color: #fff;
+  color: #111;
+
+  font-size: 18px;
+  padding: 8px 20px;
+
+  cursor: pointer;
+}
+
+.wrapper header.afia-header nav.navbar .nav-btn button:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper header.afia-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper header.afia-header .mobile-menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  .wrapper header.afia-header nav.navbar {
+    align-items: unset;
+
+    background-color: #fb7210;
+
+    position: fixed;
+    left: -100%;
+    top: 0;
+
+    width: 80%;
+    height: 100%;
+    padding: 40px 20px !important;
+
+    flex-direction: column;
+
+    transition: 0.3s;
+  }
+
+  .wrapper header.afia-header nav.navbar.active {
+    left: 0;
+  }
+
+  .wrapper header.afia-header nav.navbar ul.nav-menu {
+    list-style: none;
+    display: unset;
+  }
+
+  .wrapper header.afia-header nav.navbar ul.nav-menu .nav-items {
+    margin-right: unset;
+    margin-bottom: 35px;
+  }
+}
