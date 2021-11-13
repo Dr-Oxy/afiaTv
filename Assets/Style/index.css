@@ -161,3 +161,47 @@ nav.navbar ul.nav-menu .nav-items a:active {
     margin-bottom: 35px;
   }
 }
+
+/* Section Hero */
+main section.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  background-color: #fb781a;
+  color: #fff;
+
+  height: calc(100vh - 77px);
+}
+
+main section.hero .hero-image {
+  background: url('../Images/hero-image.svg') no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 500px;
+}
+
+main section.hero .hero-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.hero {
+    padding-right: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main section.hero .hero-image {
+    background-position: left;
+    background-size: contain;
+    height: 100%;
+  }
+
+  main section.hero .hero-text {
+    font-size: 64px;
+    text-align: left;
+    align-self: center;
+  }
+}
