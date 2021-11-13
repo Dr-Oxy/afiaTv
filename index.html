@@ -11,39 +11,69 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./Assets/Style/index.css" />
   </head>
-  <body>
+  <body class="bg-white text-black-50">
     <div class="wrapper">
-      <header class="afia-header">
+      <header
+        class="
+          afia-header
+          text-white
+          p-3
+          py-md-2
+          px-md-4
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
         <div class="afia-logo">
           <img src="./Assets/Images/afia-logo.svg" alt="Afiatv logo" />
         </div>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu d-md-none">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
 
-        <nav class="navbar">
-          <ul class="nav-menu">
+        <nav
+          class="navbar d-flex flex-column flex-md-row align-items-md-center"
+        >
+          <ul class="nav-menu mb-0 d-md-flex flex-md-row list-unstyled">
             <li class="nav-items"><a href="#news">News</a></li>
             <li class="nav-items"><a href="#shows">Shows</a></li>
             <li class="nav-items"><a href="#studio">Studio</a></li>
             <li class="nav-items"><a href="#market-place">Marketplace</a></li>
           </ul>
 
-          <div class="nav-btn"><button>LiveTv</button></div>
+          <div class="nav-btn">
+            <button
+              class="btn btn-light text-dark py-2 px-4 fs-6 fw-bold border-0"
+            >
+              LiveTv
+            </button>
+          </div>
         </nav>
       </header>
 
       <main class="web-content">
-        <section class="hero">
-          <div class="hero-image"></div>
-          <div class="hero-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            culpa distinctio.
+        <section class="hero text-white row p-2 pe-md-5">
+          <div class="hero-image col-12 col-md-6"></div>
+
+          <div class="hero-text col-12 col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos culpa distinctio.
+            </p>
           </div>
         </section>
 
@@ -68,6 +98,12 @@
     </div>
 
     <!-- Javascript functionalities -->
+    <!--Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Menu js -->
     <script src="./js/menu.js"></script>

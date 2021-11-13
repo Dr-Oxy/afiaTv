@@ -1,6 +1,7 @@
-html {
+:root {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  --orangeBackground: #fb781a;
 }
 
 *,
@@ -11,20 +12,10 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-  color: #111;
-}
+/* Header Extra Styling */
 
 .wrapper header.afia-header {
-  background-color: #fb781a;
-  color: #fff;
-
-  padding: 20px 50px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: var(--orangeBackground);
 }
 
 .wrapper header.afia-header .afia-logo img {
@@ -33,7 +24,6 @@ body {
 
 .wrapper header.afia-header .mobile-menu {
   cursor: pointer;
-  display: none;
 }
 
 .wrapper header.afia-header .mobile-menu .bar {
@@ -60,19 +50,10 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.wrapper header.afia-header nav.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.wrapper header.afia-header nav.navbar ul.nav-menu {
-  list-style: none;
-  display: flex;
-}
-
 .wrapper header.afia-header nav.navbar ul.nav-menu .nav-items {
   margin-right: 40px;
 }
+
 .activeState {
   padding-bottom: 3px;
   border-bottom: 3px white solid;
@@ -93,22 +74,9 @@ body {
   text-decoration: underline;
 }
 
-nav.navbar ul.nav-menu .nav-items a:active {
-  text-decoration: underline;
-  color: red;
-}
-
 .wrapper header.afia-header nav.navbar .nav-btn button {
-  border: none;
   outline: none;
   border-radius: 4px;
-
-  background-color: #fff;
-  color: #111;
-
-  font-size: 18px;
-  padding: 8px 20px;
-
   cursor: pointer;
 }
 
@@ -120,13 +88,8 @@ nav.navbar ul.nav-menu .nav-items a:active {
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper header.afia-header {
-    padding: 20px;
-  }
-
   .wrapper header.afia-header .mobile-menu {
     cursor: pointer;
-    display: block;
   }
 
   .wrapper header.afia-header nav.navbar {
@@ -142,8 +105,6 @@ nav.navbar ul.nav-menu .nav-items a:active {
     height: 100%;
     padding: 40px 20px !important;
 
-    flex-direction: column;
-
     transition: 0.3s;
   }
 
@@ -152,7 +113,6 @@ nav.navbar ul.nav-menu .nav-items a:active {
   }
 
   .wrapper header.afia-header nav.navbar ul.nav-menu {
-    list-style: none;
     display: unset;
   }
 
@@ -164,13 +124,8 @@ nav.navbar ul.nav-menu .nav-items a:active {
 
 /* Section Hero */
 main section.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  background-color: #fb781a;
-  color: #fff;
-
-  height: calc(100vh - 77px);
+  background-color: var(--orangeBackground);
+  height: calc(100vh - 62px);
 }
 
 main section.hero .hero-image {
@@ -185,12 +140,13 @@ main section.hero .hero-text {
   text-align: center;
   font-size: 24px;
   font-weight: 900;
+  margin-top: -30px;
+  height: fit-content;
 }
 
 @media screen and (min-width: 1024px) {
   main section.hero {
-    padding-right: 50px;
-    grid-template-columns: repeat(2, 1fr);
+    height: calc(100vh - 77px);
   }
 
   main section.hero .hero-image {
