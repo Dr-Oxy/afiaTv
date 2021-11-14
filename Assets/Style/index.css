@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+
   --orangeBackground: #fb781a;
 }
 
@@ -10,6 +10,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--orangeBackground);
+  background-color: white;
 }
 
 /* Header Extra Styling */
@@ -87,7 +94,7 @@
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .wrapper header.afia-header .mobile-menu {
     cursor: pointer;
   }
@@ -129,7 +136,7 @@ main section.hero {
 }
 
 main section.hero .hero-image {
-  background: url('../Images/hero-image.svg') no-repeat;
+  background: url('../Images/hero-image.png') no-repeat;
   background-position: top center;
   background-size: cover;
   height: 500px;
@@ -140,7 +147,6 @@ main section.hero .hero-text {
   text-align: center;
   font-size: 24px;
   font-weight: 900;
-  margin-top: -30px;
   height: fit-content;
 }
 
@@ -160,4 +166,81 @@ main section.hero .hero-text {
     text-align: left;
     align-self: center;
   }
+}
+
+/* Section About Us */
+section.about-us {
+}
+
+section.about-us .about-us-text h1 {
+  border-bottom: 5px var(--orangeBackground) solid;
+  width: fit-content;
+  font-weight: 700;
+}
+
+section.about-us .about-us-text button {
+  background-color: var(--orangeBackground);
+  outline: none;
+}
+
+section.about-us .about-us-text button:hover {
+  background-color: #c75300;
+}
+
+section.about-us .about-us-image {
+  height: 300px;
+}
+
+section.about-us .about-us-image img {
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  section.about-us .about-us-image {
+    height: 500px;
+  }
+}
+
+/* Section Studio */
+section.afia-studio {
+  height: 70vh;
+  margin-top: 20px;
+  background: rgba(255, 0, 0, 0.623) url('../Images/studio-image.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  background-blend-mode: multiply;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.afia-studio h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+/* Section MarketPlace and Hub */
+section.afia-others {
+  height: 70vh;
+  margin-top: 20px;
+}
+
+article.afia-market div {
+  height: 100%;
+  background: rgba(231, 234, 96, 0.71) url('../Images/market-image.png')
+    no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+article.afia-hub div {
+  height: 100%;
+  background: rgba(251, 147, 72, 0.63) url('../Images/hub-image.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-blend-mode: multiply;
 }

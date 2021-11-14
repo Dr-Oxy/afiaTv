@@ -21,8 +21,9 @@
 
     <link rel="stylesheet" href="./Assets/Style/index.css" />
   </head>
-  <body class="bg-white text-black-50">
-    <div class="wrapper">
+  <body class="text-black-50 bg-light">
+    <div class="wrapper container-fluid">
+      <!-- Header and Nav -->
       <header
         class="
           afia-header
@@ -66,6 +67,7 @@
       </header>
 
       <main class="web-content">
+        <!-- Hero -->
         <section class="hero text-white row p-2 pe-md-5">
           <div class="hero-image col-12 col-md-6"></div>
 
@@ -77,14 +79,50 @@
           </div>
         </section>
 
-        <section class="about-us"></section>
+        <!-- About Us -->
+        <section class="about-us bg-light row">
+          <div
+            class="about-us-text col-12 col-md-6 mt-3 px-5 align-self-center"
+          >
+            <h1>About Us</h1>
+            <p class="text-black-50 fs-5 my-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis
+              neque, consectetur sit urna mauris, feugiat eu. Nam ut sit velit
+              euismod tellus cursus. Turpis nullam dictum commodo libero. Vitae
+              tempor morbi nibh risus, lectus sollicitudin enim at sapien.
+              Turpis quis facilisi vestibulum accumsan diam eget. Faucibus eu
+              molestie purus purus eros, viverra ut.
+            </p>
+            <div>
+              <button class="border-0 btn px-4 py-2">
+                <a class="text-light text-decoration-none" href="#contact-us"
+                  >Contact Us</a
+                >
+              </button>
+            </div>
+          </div>
 
-        <section id="studio" class="afia-studio"></section>
+          <div class="about-us-image col-12 col-md-6 text-md-end">
+            <img src="../Assets/Images/about-image.svg" alt="" />
+          </div>
+        </section>
 
-        <section id="market-place" class="afia-others">
-          <article class="afia-market"></article>
+        <section id="studio" class="afia-studio">
+          <h1>Afia Studio</h1>
+        </section>
 
-          <article class="afia-hub"></article>
+        <section class="afia-others row">
+          <article id="market-place" class="afia-market col-lg-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <h1 class="text-white">Afia Marketplace</h1>
+            </div>
+          </article>
+
+          <article class="afia-hub col-lg-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <h1 class="text-white">Afia Hub</h1>
+            </div>
+          </article>
         </section>
 
         <section id="shows" class="shows"></section>
