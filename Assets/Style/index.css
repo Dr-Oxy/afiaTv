@@ -271,6 +271,7 @@ article.afia-hub div {
 
 section.shows article .orange-col {
   height: 100%;
+  height: 500px;
   background: rgba(251, 113, 13, 0.63);
 }
 
@@ -283,13 +284,7 @@ section.shows article .orange-col .shows-image {
 
 section.shows article .shows-card {
   height: 300px;
-  background: linear-gradient(
-      to bottom left,
-      rgba(197, 222, 255, 0),
-      rgba(255, 255, 255, 0),
-      rgba(22, 22, 22, 0.513)
-    ),
-    url('../Images/lupinLIST\ 1.png') no-repeat;
+  background: url('../Images/lupinLIST\ 1.png') no-repeat;
   background-size: cover;
 }
 
