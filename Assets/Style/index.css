@@ -134,7 +134,7 @@ body {
 /* Section Hero */
 main section.hero {
   background-color: var(--orangeBackground);
-  height: calc(100vh - 62px);
+  min-height: calc(100vh - 62px);
 }
 
 main section.hero .hero-image {
@@ -222,7 +222,6 @@ section.about-us .about-us-image img {
 /* Section Studio */
 section.afia-studio {
   height: 70vh;
-  margin-top: 20px;
   background: rgba(255, 0, 0, 0.623) url('../Images/studio-image.png') no-repeat;
   background-position: center center;
   background-size: cover;
@@ -271,21 +270,28 @@ article.afia-hub div {
 
 section.shows article .orange-col {
   height: 100%;
-  height: 500px;
   background: rgba(251, 113, 13, 0.63);
 }
 
 section.shows article .orange-col .shows-image {
   height: 100%;
   position: absolute;
-  top: -24px;
-  left: 100px;
+  top: -68px;
+  left: 60px;
 }
 
 section.shows article .shows-card {
   height: 300px;
   background: url('../Images/lupinLIST\ 1.png') no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  section.shows {
+    margin: 20px 0;
+    padding-bottom: 70px;
+    padding-top: 30px;
+  }
 }
 
 /* ======================================= */
