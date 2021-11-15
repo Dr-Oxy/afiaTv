@@ -271,7 +271,6 @@ article.afia-hub div {
 /* Section Contact Us */
 section.contact-us {
   background-color: var(--orangeBackground);
-  /* min-height: 60vh; */
 }
 
 section.contact-us input,
@@ -285,8 +284,20 @@ section.contact-us textarea {
 
 section.contact-us .contact-img img {
   height: 500px;
-  /* background: red; */
   position: absolute;
   top: -50px;
   right: 30px;
+}
+
+/* Footer */
+footer .footer-socials a {
+  text-decoration: none;
+}
+
+footer .footer-socials img {
+  height: 24px;
+}
+
+footer .footer-address img {
+  height: 20px;
 }
