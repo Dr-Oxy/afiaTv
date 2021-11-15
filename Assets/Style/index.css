@@ -1,7 +1,7 @@
 :root {
   font-size: 16px;
-
   --orangeBackground: #fb781a;
+  --btnHover: #c75300;
 }
 
 *,
@@ -168,23 +168,25 @@ main section.hero .hero-text {
   }
 }
 
-/* Section About Us */
-section.about-us {
-}
-
-section.about-us .about-us-text h1 {
+section.about-us h1,
+section.news h1,
+section.shows h1,
+section.contact-us h1 {
+  font-weight: 700;
+  color: #111;
+  font-size: 48px;
   border-bottom: 5px var(--orangeBackground) solid;
   width: fit-content;
-  font-weight: 700;
 }
 
+/* Section About Us */
 section.about-us .about-us-text button {
   background-color: var(--orangeBackground);
   outline: none;
 }
 
 section.about-us .about-us-text button:hover {
-  background-color: #c75300;
+  background-color: var(--btnHover);
 }
 
 section.about-us .about-us-image {
@@ -244,3 +246,19 @@ article.afia-hub div {
   background-size: cover;
   background-blend-mode: multiply;
 }
+
+/* Section Shows */
+
+/* Section News */
+.news .news-grid .card .btn,
+.news .btn {
+  background-color: var(--orangeBackground);
+  width: fit-content;
+}
+
+.news .news-grid .card .btn:hover,
+.news .btn:hover {
+  background-color: var(--btnHover);
+}
+
+/* Section Contact Us */

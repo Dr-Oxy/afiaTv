@@ -21,9 +21,9 @@
 
     <link rel="stylesheet" href="./Assets/Style/index.css" />
   </head>
-  <body class="text-black-50 bg-light">
-    <div class="wrapper container-fluid">
-      <!-- Header and Nav -->
+  <body class="text-black-50 bg-white">
+    <div class="wrapper">
+      <!-- AfiaTv Header and Nav -->
       <header
         class="
           afia-header
@@ -66,10 +66,13 @@
         </nav>
       </header>
 
+      <!-- Main -->
       <main class="web-content">
-        <!-- Hero -->
+        <!-- AfiaTv Hero -->
         <section class="hero text-white row p-2 pe-md-5">
-          <div class="hero-image col-12 col-md-6"></div>
+          <div class="col-12 col-md-6">
+            <div class="hero-image"></div>
+          </div>
 
           <div class="hero-text col-12 col-md-6">
             <p>
@@ -79,10 +82,10 @@
           </div>
         </section>
 
-        <!-- About Us -->
-        <section class="about-us bg-light row">
+        <!--AfiaTv About Us -->
+        <section class="about-us row">
           <div
-            class="about-us-text col-12 col-md-6 mt-3 px-5 align-self-center"
+            class="about-us-text col-12 col-lg-6 mt-3 px-5 align-self-center"
           >
             <h1>About Us</h1>
             <p class="text-black-50 fs-5 my-5">
@@ -102,36 +105,118 @@
             </div>
           </div>
 
-          <div class="about-us-image col-12 col-md-6 text-md-end">
-            <img src="../Assets/Images/about-image.svg" alt="" />
+          <div class="about-us-image mb-3 mb-lg-0 col-12 col-lg-6 text-lg">
+            <img src="../afiaTv/Assets/Images/about-image.png" alt="image" />
           </div>
         </section>
 
+        <!--AfiaTv Studio -->
         <section id="studio" class="afia-studio">
           <h1>Afia Studio</h1>
         </section>
 
+        <!--AfiaTv Marketplace && Hub -->
         <section class="afia-others row">
-          <article id="market-place" class="afia-market col-lg-6">
+          <article id="market-place" class="afia-market col-12 mb-3 mb-lg-0 col-lg-6">
             <div class="d-flex justify-content-center align-items-center">
               <h1 class="text-white">Afia Marketplace</h1>
             </div>
           </article>
 
-          <article class="afia-hub col-lg-6">
+          <article class="afia-hub col-12 col-lg-6">
             <div class="d-flex justify-content-center align-items-center">
               <h1 class="text-white">Afia Hub</h1>
             </div>
           </article>
         </section>
 
+        <!--AfiaTv Shows -->
         <section id="shows" class="shows"></section>
 
-        <section id="news" class="news"></section>
+        <!--AfiaTv News -->
+        <section id="news" class="news my-5 px-4">
+          <h1 class="mb-4 text-center text-lg-start">News</h1>
+
+          <div class="news-grid row">
+            <div class="mb-3 mb-lg-0 col-12 col-sm-6 col-lg-4">
+              <div class="card p-0 border-0 bg-light">
+                <img
+                  src="../afiaTv/Assets/Images/studio-image.png"
+                  class="card-img-top"
+                  alt="news-image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 fw-bolder">
+                    Lorem ipsum dolor sit amet.
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Volutpat vitae at diam sed. Aliquet tempor, volutpat quis
+                    vitae euismod mattis. Et nec pellentesque lorem nec amet
+                    tempor nullam pellentesque. In ipsum sed sed imperdiet mattis
+                    sit orci arcu.
+                  </p>
+                  <a href="#" class="btn text-white fs-5 py-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+
+             <div class="mb-3 mb-lg-0 col-12 col-sm-6 col-lg-4">
+              <div class="card p-0 border-0 bg-light">
+                <img
+                  src="../afiaTv/Assets/Images/studio-image.png"
+                  class="card-img-top"
+                  alt="news-image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 fw-bolder">
+                    Lorem ipsum dolor sit amet.
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Volutpat vitae at diam sed. Aliquet tempor, volutpat quis
+                    vitae euismod mattis. Et nec pellentesque lorem nec amet
+                    tempor nullam pellentesque. In ipsum sed sed imperdiet mattis
+                    sit orci arcu.
+                  </p>
+                  <a href="#" class="btn text-white fs-5 py-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+
+           <div class="mb-3 mb-lg-0 col-12 col-sm-6 col-lg-4">
+              <div class="card p-0 border-0 bg-light">
+                <img
+                  src="../afiaTv/Assets/Images/studio-image.png"
+                  class="card-img-top"
+                  alt="news-image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-dark fs-2 fw-bolder">
+                    Lorem ipsum dolor sit amet.
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Volutpat vitae at diam sed. Aliquet tempor, volutpat quis
+                    vitae euismod mattis. Et nec pellentesque lorem nec amet
+                    tempor nullam pellentesque. In ipsum sed sed imperdiet mattis
+                    sit orci arcu.
+                  </p>
+                  <a href="#" class="btn text-white fs-5 py-2 px-3">Read More</a>
+                </div>
+              </div>
+            </div>
+
+          <div class="news-cta text-center my-5"><a class="btn text-white fs-5 py-2 px-4" href="#news">Show More</a></button></div>
+        </section>
+
+        <!--AfiaTv Contact Us -->
 
         <section class="contact-us"></section>
       </main>
+      <!-- End of Main -->
 
+      <!-- Footer -->
       <footer></footer>
     </div>
 
