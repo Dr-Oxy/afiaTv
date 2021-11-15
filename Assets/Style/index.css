@@ -170,12 +170,19 @@ main section.hero .hero-text {
 
 section.about-us h1,
 section.news h1,
-section.shows h1,
-section.contact-us h1 {
+section.shows h1 {
   font-weight: 700;
   color: #111;
   font-size: 48px;
   border-bottom: 5px var(--orangeBackground) solid;
+  width: fit-content;
+}
+
+section.contact-us h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 48px;
+  border-bottom: 5px #fff solid;
   width: fit-content;
 }
 
@@ -262,3 +269,24 @@ article.afia-hub div {
 }
 
 /* Section Contact Us */
+section.contact-us {
+  background-color: var(--orangeBackground);
+  /* min-height: 60vh; */
+}
+
+section.contact-us input,
+section.contact-us textarea {
+  background: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.774) !important;
+}
+
+section.contact-us .contact-img img {
+  height: 500px;
+  /* background: red; */
+  position: absolute;
+  top: -50px;
+  right: 30px;
+}
