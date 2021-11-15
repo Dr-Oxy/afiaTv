@@ -129,6 +129,8 @@ body {
   }
 }
 
+/* ======================================= */
+
 /* Section Hero */
 main section.hero {
   background-color: var(--orangeBackground);
@@ -168,6 +170,8 @@ main section.hero .hero-text {
   }
 }
 
+/* ======================================= */
+
 section.about-us h1,
 section.news h1,
 section.shows h1 {
@@ -186,8 +190,11 @@ section.contact-us h1 {
   width: fit-content;
 }
 
+/* ======================================= */
+
 /* Section About Us */
-section.about-us .about-us-text button {
+section.about-us .about-us-text button,
+section.shows article .show-btn {
   background-color: var(--orangeBackground);
   outline: none;
 }
@@ -210,6 +217,8 @@ section.about-us .about-us-image img {
   }
 }
 
+/* ======================================= */
+
 /* Section Studio */
 section.afia-studio {
   height: 70vh;
@@ -230,6 +239,8 @@ section.afia-studio h1 {
   font-size: 60px;
   font-weight: 900;
 }
+
+/* ======================================= */
 
 /* Section MarketPlace and Hub */
 section.afia-others {
@@ -254,7 +265,35 @@ article.afia-hub div {
   background-blend-mode: multiply;
 }
 
+/* ======================================= */
+
 /* Section Shows */
+
+section.shows article .orange-col {
+  height: 100%;
+  background: rgba(251, 113, 13, 0.63);
+}
+
+section.shows article .orange-col .shows-image {
+  height: 100%;
+  position: absolute;
+  top: -24px;
+  left: 100px;
+}
+
+section.shows article .shows-card {
+  height: 300px;
+  background: linear-gradient(
+      to bottom left,
+      rgba(197, 222, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(22, 22, 22, 0.513)
+    ),
+    url('../Images/lupinLIST\ 1.png') no-repeat;
+  background-size: cover;
+}
+
+/* ======================================= */
 
 /* Section News */
 .news .news-grid .card .btn,
@@ -267,6 +306,8 @@ article.afia-hub div {
 .news .btn:hover {
   background-color: var(--btnHover);
 }
+
+/* ======================================= */
 
 /* Section Contact Us */
 section.contact-us {
@@ -288,6 +329,8 @@ section.contact-us .contact-img img {
   top: -50px;
   right: 30px;
 }
+
+/* ======================================= */
 
 /* Footer */
 footer .footer-socials a {
