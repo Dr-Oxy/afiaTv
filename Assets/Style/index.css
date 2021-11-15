@@ -288,7 +288,7 @@ section.shows article .shows-card {
 
 @media screen and (min-width: 992px) {
   section.shows {
-    margin: 20px 0;
+    margin-top: 20px;
     padding-bottom: 70px;
     padding-top: 30px;
   }
