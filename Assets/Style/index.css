@@ -13,7 +13,6 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   background-color: var(--orangeBackground);
   background-color: white;
@@ -23,6 +22,8 @@ body {
 
 .wrapper header.afia-header {
   background-color: var(--orangeBackground);
+  width: 100%;
+  overflow-x: hidden !important;
 }
 
 .wrapper header.afia-header .afia-logo img {
@@ -31,6 +32,7 @@ body {
 
 .wrapper header.afia-header .mobile-menu {
   cursor: pointer;
+  display: none;
 }
 
 .wrapper header.afia-header .mobile-menu .bar {
@@ -94,9 +96,9 @@ body {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .wrapper header.afia-header .mobile-menu {
-    cursor: pointer;
+    display: block;
   }
 
   .wrapper header.afia-header nav.navbar {
@@ -107,6 +109,7 @@ body {
     position: fixed;
     left: -100%;
     top: 0;
+    z-index: 9999;
 
     width: 80%;
     height: 100%;
