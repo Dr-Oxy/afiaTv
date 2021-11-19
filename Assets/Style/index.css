@@ -156,6 +156,12 @@ main section.hero .hero-text {
   height: fit-content;
 }
 
+@media screen and (max-width: 360px) {
+  main section.hero .hero-image img {
+    height: 20rem;
+  }
+}
+
 @media screen and (min-width: 650px) {
   main section.hero .hero-image img {
     height: 38rem;
@@ -204,6 +210,11 @@ section.contact-us h1 {
 /* ======================================= */
 
 /* Section About Us */
+section.about-us .about-us-text p {
+  height: 250px;
+  overflow-y: auto;
+}
+
 section.about-us .about-us-text button,
 section.shows article .show-btn {
   background-color: var(--orangeBackground);
@@ -225,6 +236,13 @@ section.about-us .about-us-image img {
 @media screen and (min-width: 768px) {
   section.about-us .about-us-image {
     height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.about-us .about-us-text p {
+    height: 180px;
+    overflow-y: auto;
   }
 }
 
@@ -338,8 +356,8 @@ section.contact-us textarea {
 section.contact-us .contact-img img {
   height: 500px;
   position: absolute;
-  top: -50px;
-  right: 30px;
+  bottom: 19.5%;
+  right: 3%;
 }
 
 /* ======================================= */
