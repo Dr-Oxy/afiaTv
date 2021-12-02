@@ -195,24 +195,42 @@ section.shows h1 {
   font-weight: 700;
   color: #111;
   font-size: 48px;
-  border-bottom: 5px var(--orangeBackground) solid;
   width: fit-content;
+}
+
+section.about-us h1::after,
+section.news h1::after,
+section.shows h1::after {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 70%;
+  background: var(--orangeBackground);
+  border-radius: 4px;
+  margin-top: 4px;
 }
 
 section.contact-us h1 {
   font-weight: 700;
   color: #fff;
   font-size: 48px;
-  border-bottom: 5px #fff solid;
   width: fit-content;
+}
+
+section.contact-us h1::after {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 70%;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 4px;
 }
 
 /* ======================================= */
 
 /* Section About Us */
-section.about-us,
-section.shows article,
-section.news .news-grid {
+section.about-us {
   background: url('../Images/afia\ mark\ 3.svg') center no-repeat;
 }
 
@@ -327,6 +345,10 @@ section.shows article .shows-card {
     padding-bottom: 70px;
     padding-top: 30px;
   }
+
+  section.shows article .info {
+    width: 75%;
+  }
 }
 
 /* ======================================= */
@@ -355,6 +377,13 @@ section.contact-us textarea {
   background: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--orangeBackground) inset !important;
+}
+
 ::placeholder {
   color: rgba(255, 255, 255, 0.774) !important;
 }
@@ -366,8 +395,12 @@ section.contact-us .contact-img img {
   right: 3%;
 }
 
-section.contact-us .contact-cta button:hover {
-  background-color: rgb(194, 194, 194);
+section.contact-us button {
+  width: fit-content;
+}
+
+section.contact-us button:hover {
+  background-color: rgb(223, 223, 223);
 }
 
 /* ======================================= */
