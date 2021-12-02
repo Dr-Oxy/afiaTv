@@ -210,6 +210,12 @@ section.contact-us h1 {
 /* ======================================= */
 
 /* Section About Us */
+section.about-us,
+section.shows article,
+section.news .news-grid {
+  background: url('../Images/afia\ mark\ 3.svg') center no-repeat;
+}
+
 section.about-us .about-us-text p {
   height: 250px;
   overflow-y: auto;
@@ -358,6 +364,10 @@ section.contact-us .contact-img img {
   position: absolute;
   bottom: 19%;
   right: 3%;
+}
+
+section.contact-us .contact-cta button:hover {
+  background-color: rgb(194, 194, 194);
 }
 
 /* ======================================= */
